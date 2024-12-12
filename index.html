@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Way Travels</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<a href="#home"></a>
+<body class="body1">
+    <div id="home">
+    <header class="header1">
+        <div class="container1">
+            <div class="logo1">
+                <img src="LOGO2.jpg" alt="One-Way Travels Logo">
+                <h1>ONE WAY TRAVELS</h1>
+            </div>
+            <nav class="nav1">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#features">FEATURES <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#feature1"><i class="fas fa-car"></i>Feature 1</a></li>
+                            <li><a href="#feature2"><i class="fas fa-map-marked-alt"></i>Feature 2</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li><a href="#taxi rates">TAXI RATES<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#taxi-info"><i class="fas fa-car"></i>TAXI INFO</a></li>
+                            <li><a href="#service"><i class="fas fa-car"></i>SERVICE</a></li>
+                            <li><a href="#testimonial"><i class="fas fa-map-marked-alt"></i>TESTIMONIAL</a></li>
+
+                           
+                        </ul>
+                    </li>
+                    <li><a href="#contact us">CONTACT US</a>
+                    </li>
+                </ul>
+                <li>
+                <a href="#book-now1" class="book-now1">BOOK NOW</a>
+            </li>
+            </nav>
+        </div>
+    </div>
+    </header>
+    <main class="main1">
+        <div class="content1">
+            <h2>
+                <span>S</span><span>t</span><span>a</span><span>r</span><span>t</span> 
+                <span>Y</span><span>o</span><span>u</span><span>r</span> 
+                <span>J</span><span>o</span><span>u</span><span>r</span><span>n</span><span>e</span><span>y</span> 
+                <span>T</span><span>o</span><span>d</span><span>a</span><span>y</span>
+            </h2>
+            <p>Experience the best one-way travel services with affordable rates and reliable rides. Let us take you to your destination in style and comfort.</p>
+            <a href="#" class="cta-button1">Explore More</a>
+        </div>
+    </main>
+    <script>
+        // Smooth scroll behavior for navigation links
+        // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        //     anchor.addEventListener('click', function (e) {
+        //         e.preventDefault();
+    
+        //         const targetId = this.getAttribute('href').substring(1);
+        //         const targetElement = document.getElementById(targetId);
+    
+        //         if (targetElement) {
+        //             targetElement.scrollIntoView({
+        //                 behavior: 'smooth',
+        //                 block: 'start',
+        //             });
+        //         }
+        //     });
+        // });
+        document.querySelectorAll('.nav1 ul li a .fas').forEach(icon => {
+            icon.addEventListener('click', function (e) {
+                e.preventDefault();
+                const dropdown = this.closest('li').querySelector('.dropdown');
+                if (dropdown) {
+                    dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+                }
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.nav1')) {
+                document.querySelectorAll('.nav1 .dropdown').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+
+       
+
+    </script>  
+
+</body>
+<a href="#about"></a>
+
+<body class="body2">
+    <div id="about">
+
+    <div class="title2">ABOUT US</div>
+
+    <div class="container2">
+        <div class="image-section2">
+            <div class="badge2">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/medal.png" alt="Badge">
+                30 Years Of Quality Service
+            </div>
+            <img src="taxi1.png" alt="Taxi">
+        </div>
+        <div class="content-section2">
+            <h1>About <span>Our Company</span></h1>
+            <p>Our company provides reliable taxi services in Chennai, with a focus on comfort, safety, and convenience. We’ve been serving clients for over 30 years, always ensuring a great travel experience.</p>
+            <ul>
+                <li>Trusted drivers with years of experience.</li>
+                <li>Well-maintained, clean vehicles for your comfort.</li>
+                <li>24/7 availability to meet your needs.</li>
+                <li>Affordable pricing with no hidden fees.</li>
+            </ul>
+            <a href="#" class="button2">Learn More</a>
+        </div>
+    </div>
+</div>
+    
+<script>
+    // Smooth scroll behavior for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            }
+        });
+    });
+</script>  
+    
+    
+  
+</body>
+
+<a href="#feature1"></a>
+
+<body class="body3">
+
+    <div id="feature1">
+
+    <div class="section-title3">
+        <h1>FEATURES</h1>
+    </div>
+
+    <div class="services3">
+        <div class="service-box3">
+            <img src="image2.jpg" alt="Online Booking">
+            <h1>Online Booking</h1>
+            <p>Book your ride easily from your smartphone or computer. Choose your pickup and drop-off locations, car type, and preferred time. Instant availability and fare estimates.</p>
+        </div>
+        <div class="service-box3">
+            <img src="a4.jpg" alt="One Way Drop">
+            <h1>One Way Drop</h1>
+            <p>Need a ride for a single journey? Our one-way drop service is perfect for airport transfers or outstation trips where you don't need a return ride.</p>
+        </div>
+        <div class="service-box3">
+            <img src="image4.jpg" alt="Airport Transit">
+            <h1>Airport Transit</h1>
+            <p>Get to and from the airport without the hassle. Reliable and comfortable airport transfers with experienced drivers who know the fastest routes.</p>
+        </div>
+        <div class="service-box3">
+            <img src="image5.jpg" alt="Business Travel">
+            <h1>Business Travel</h1>
+            <p>Our business travel service ensures corporate clients get professional and punctual service for meetings, conferences, and more. Invoicing available on request.</p>
+        </div>
+        <div class="service-box3">
+            <img src="image6.jpg" alt="City Travel">
+            <h1>City Travel</h1>
+            <p>Explore the city with ease. Our taxis are perfect for commuting, sightseeing, or running errands within the city. Real-time availability and dynamic pricing.</p>
+        </div>
+        <div class="service-box3">
+            <img src="image7.jpg" alt="Tour Booking">
+            <h1>Tour Booking</h1>
+            <p>Explore the best sights and sounds of the city with our personalized tour booking services. Professional guides and comfortable transportation await you.</p>
+        </div>
+    </div>
+
+    <div class="floating-buttons3">
+        <a href="tel:+919876543210">📞</a>
+        <a href="https://wa.me/919876543210" target="_blank">💬</a>
+    </div>
+
+    <div class="scroll-top3" onclick="scrollToTop()">⬆</div>
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            }
+        });
+    });
+    </script>
+
+</body>  
+<a href="#taxi-info" class="our-taxi-section"></a> 
+    <body class="body4">
+        <div id="taxi-info" class="our-taxi-section">
+        <div class="header">
+            <h1>OUR TAXI <br> </h1>
+        </div>
+    
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="toyota-etios">TOYOTA ETIOS</button>
+            <button class="filter-btn" data-filter="dzire">DZIRE</button>
+            <button class="filter-btn" data-filter="ertiga">ERTIGA</button>
+            <button class="filter-btn" data-filter="xylo">XYLO</button>
+            <button class="filter-btn" data-filter="innova">INNOVA</button>
+            <button class="filter-btn" data-filter="innova-crysta">INNOVA CRYSTA</button>
+        </div>
+    
+        <div class="card-container">
+            <div class="card toyota-etios">
+                <img src="eitios.webp" alt="Toyota Etios">
+                <h3>TOYOTA ETIOS</h3>
+                <p>₹15/km</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="icon-box">👤</div>
+                        <div class="label-box">Passengers</div>
+                        <div class="value-box">4+1 Person</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🛄</div>
+                        <div class="label-box">Luggage</div>
+                        <div class="value-box">4 Bags</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">❄</div>
+                        <div class="label-box">Air Condition</div>
+                        <div class="value-box">Yes</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">➡</div>
+                        <div class="label-box">One-way Taxi</div>
+                        <div class="value-box">₹16/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🔄</div>
+                        <div class="label-box">Return Taxi</div>
+                        <div class="value-box">₹15/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (Drop)</div>
+                        <div class="value-box">₹400/day</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (above KM)</div>
+                        <div class="value-box">₹500/day</div>
+                    </div>
+                </div>
+                <a href="#" class="book-button">Book Taxi Now →</a>
+            </div>
+    
+            <div class="card dzire">
+                <img src="dzire.webp" alt="Dzire">
+                <h3>DZIRE</h3>
+                <p>₹14/km</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="icon-box">👤</div>
+                        <div class="label-box">Passengers</div>
+                        <div class="value-box">4+1 Person</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🛄</div>
+                        <div class="label-box">Luggage</div>
+                        <div class="value-box">3 Bags</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">❄</div>
+                        <div class="label-box">Air Condition</div>
+                        <div class="value-box">Yes</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">➡</div>
+                        <div class="label-box">One-way Taxi</div>
+                        <div class="value-box">₹15/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🔄</div>
+                        <div class="label-box">Return Taxi</div>
+                        <div class="value-box">₹14/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (Drop)</div>
+                        <div class="value-box">₹400/day</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (above KM)</div>
+                        <div class="value-box">₹500/day</div>
+                    </div>
+                </div>
+                <a href="#" class="book-button">Book Taxi Now →</a>
+            </div>
+            <div class="card ertiga">
+                <img src="ertiga.webp" alt="Ertiga">
+                <h3>ERTIGA</h3>
+                <p>₹19/km</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="icon-box">👤</div>
+                        <div class="label-box">Passengers</div>
+                        <div class="value-box">6+1 Person</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🛄</div>
+                        <div class="label-box">Luggage</div>
+                        <div class="value-box">3 Bags</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">❄</div>
+                        <div class="label-box">Air Condition</div>
+                        <div class="value-box">Yes</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">➡</div>
+                        <div class="label-box">One-way Taxi</div>
+                        <div class="value-box">₹20/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🔄</div>
+                        <div class="label-box">Return Taxi</div>
+                        <div class="value-box">₹19/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (Drop)</div>
+                        <div class="value-box">₹400/day</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (above KM)</div>
+                        <div class="value-box">₹500/day</div>
+                    </div>
+                </div>
+                <a href="#" class="book-button">Book Taxi Now →</a>
+            </div>
+            <div class="card xylo">
+                <img src="xylo.webp" alt="Xylo">
+                <h3>XYLO</h3>
+                <p>₹19/km</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="icon-box">👤</div>
+                        <div class="label-box">Passengers</div>
+                        <div class="value-box">7+1 Person</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🛄</div>
+                        <div class="label-box">Luggage</div>
+                        <div class="value-box">3 Bags</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">❄</div>
+                        <div class="label-box">Air Condition</div>
+                        <div class="value-box">Yes</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">➡</div>
+                        <div class="label-box">One-way Taxi</div>
+                        <div class="value-box">₹21/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🔄</div>
+                        <div class="label-box">Return Taxi</div>
+                        <div class="value-box">₹20/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (Drop)</div>
+                        <div class="value-box">₹400/day</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (above KM)</div>
+                        <div class="value-box">₹500/day</div>
+                    </div>
+                </div>
+                <a href="#" class="book-button">Book Taxi Now →</a>
+            </div>
+            <div class="card innova">
+                <img src="innova.webp" alt="Innova">
+                <h3>INNOVA</h3>
+                <p>₹21/km</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="icon-box">👤</div>
+                        <div class="label-box">Passengers</div>
+                        <div class="value-box">7+1 Person</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🛄</div>
+                        <div class="label-box">Luggage</div>
+                        <div class="value-box">3 Bags</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">❄</div>
+                        <div class="label-box">Air Condition</div>
+                        <div class="value-box">Yes</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">➡</div>
+                        <div class="label-box">One-way Taxi</div>
+                        <div class="value-box">₹20/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🔄</div>
+                        <div class="label-box">Return Taxi</div>
+                        <div class="value-box">₹19/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (Drop)</div>
+                        <div class="value-box">₹400/day</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (above KM)</div>
+                        <div class="value-box">₹500/day</div>
+                    </div>
+                </div>
+                <a href="#" class="book-button">Book Taxi Now →</a>
+            </div>
+            <div class="card innova-crysta">
+                <img src="innova crysta.webp" alt="Innova Crysta">
+                <h3>INNOVA CRYSTA</h3>
+                <p>₹21/km</p>
+                <div class="details">
+                    <div class="detail-item">
+                        <div class="icon-box">👤</div>
+                        <div class="label-box">Passengers</div>
+                        <div class="value-box">7+1 Person</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🛄</div>
+                        <div class="label-box">Luggage</div>
+                        <div class="value-box">3 Bags</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">❄</div>
+                        <div class="label-box">Air Condition</div>
+                        <div class="value-box">Yes</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">➡</div>
+                        <div class="label-box">One-way Taxi</div>
+                        <div class="value-box">₹28/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">🔄</div>
+                        <div class="label-box">Return Taxi</div>
+                        <div class="value-box">₹27/km</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (Drop)</div>
+                        <div class="value-box">₹400/day</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="icon-box">💼</div>
+                        <div class="label-box">Driver Bata (above KM)</div>
+                        <div class="value-box">₹500/day</div>
+                    </div>
+                </div>
+                <a href="#" class="book-button">Book Taxi Now →</a>
+            </div>
+        </div>
+    </div>
+    
+        <script>
+            const buttons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.card');
+    
+            function updateDisplay(filter) {
+                cards.forEach(card => {
+                    card.style.display = filter === 'all' || card.classList.contains(filter) ? 'block' : 'none';
+                });
+            }
+    
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    updateDisplay(button.getAttribute('data-filter'));
+                });
+            });
+    
+            // Show all cards by default
+            document.addEventListener('DOMContentLoaded', () => {
+                updateDisplay('all');
+            });
+
+            function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            }
+        });
+    });
+
+    document.querySelector('.cta-button1').addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector('.our-taxi-section'); // Or `.our-taxi-section`
+    if (target) {
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+});
+
+
+
+        </script>
+    </body>
+    <a href="#book-now1" class="book-now1-section"></a>
+   <body class="body6">
+    <div id="book-now1" class="book-now1-section">
+    <div class="container6">
+        <h2>Book Your Ride</h2> <!-- Title above the form -->
+        <div class="card6">
+            <!-- Personal Details Section -->
+            <div class="form-section6">
+                <h3>Personal Details</h3>
+                <div class="form-group6">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Mobile Number">
+                </div>
+            </div>
+
+            <!-- Trip Details Section -->
+            <div class="form-section6">
+                <h3>Trip Details</h3>
+                <div class="form-group6">
+                    <input type="text" placeholder="Pickup Location">
+                    <input type="text" placeholder="Drop Location">
+                </div>
+                <div class="form-group6">
+                    <input type="text" placeholder="Pickup Date">
+                    <input type="text" placeholder="Pickup Time">
+                </div>
+                <div class="form-group6">
+                    <input type="text" placeholder="Return Date">
+                </div>
+            </div>
+
+            <!-- Cab Options Section -->
+            <div class="form-section6">
+                <h3>Cab Options</h3>
+                <div class="cab-options6">
+                    <div class="cab-option6" onclick="selectCab(this)">
+                        <img src="image31.png" alt="Sedan">
+                        <span>13 ₹/KM<br>SEDAN</span>
+                    </div>
+                    <div class="cab-option6" onclick="selectCab(this)">
+                        <img src="image32.png" alt="Etios">
+                        <span>13 ₹/KM<br>ETIOS</span>
+                    </div>
+                    <div class="cab-option6" onclick="selectCab(this)">
+                        <img src="image33.png" alt="SUV">
+                        <span>17 ₹/KM<br>SUV</span>
+                    </div>
+                    <div class="cab-option6" onclick="selectCab(this)">
+                        <img src="image34.png" alt="Innova">
+                        <span>18 ₹/KM<br>INNOVA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group6">
+                <button type="submit">Get Estimate</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // Function to handle cab selection
+        function selectCab(cab) {
+            const allCabs = document.querySelectorAll('.cab-option6');
+            allCabs.forEach(option => option.classList.remove('selected'));
+            cab.classList.add('selected');
+        }
+
+        // Smooth scrolling for "BOOK NOW" button
+        document.querySelector('.book-now1').addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSection = document.getElementById('#book-now1');
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            }
+        });
+
+       // Select all buttons with the class 'book-button'
+const bookButtons = document.querySelectorAll('.book-button');
+
+// Add a click event listener to each button
+bookButtons.forEach((button, index) => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // Identify the target section dynamically based on the button
+        const targetSection = document.querySelector('.book-now1-section'); // Replace with the actual class or ID of the target section
+        
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+    </script>
+</body>
+
+<a href="#feature2"></a>
+    <body class="body8">
+        <div id="feature2">
+        <section class="features-section8">
+          <h2>Our Stunning Features</h2>
+          <div class="features-container8">
+            <!-- Card 1 -->
+            <div class="feature-card8">
+              <div class="icon-circle8">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/security-checked.png" alt="Safety Guarantee">
+              </div>
+              <h3>Safety Guarantee</h3>
+              <p>Travel with peace of mind. Our drivers and vehicles are thoroughly checked.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="feature-card8">
+              <div class="icon-circle8">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/taxi.png" alt="Fast Pickup">
+              </div>
+              <h3>Fast Pickup</h3>
+              <p>Don't wait for long. Book now and get a taxi in minutes.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="feature-card8">
+              <div class="icon-circle8">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/cheap-2.png" alt="Affordable Rate">
+              </div>
+              <h3>Affordable Rate</h3>
+              <p>Enjoy your ride without breaking the bank. Competitive prices guaranteed.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="feature-card8">
+              <div class="icon-circle8">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/customer-support.png" alt="24/7 Support">
+              </div>
+              <h3>24/7 Support</h3>
+              <p>Assistance is just a call away. We're here for you anytime, anywhere.</p>
+            </div>
+          </div>
+        </div>
+    
+        </section>
+        <div class="floating-buttons3">
+            <a href="tel:+919876543210">📞</a>
+            <a href="https://wa.me/919876543210" target="_blank">💬</a>
+        </div>
+    
+        <div class="scroll-top3" onclick="scrollToTop()">⬆</div>
+        </div>
+    
+        
+        <script>
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+    
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }
+            });
+        });
+        </script>
+      </body>
+      <a href="#service" class="service-section"></a>
+      <body class="body5">
+        <div id="service" class="service-section">
+        <div class="title5">OUR SERVICES</div> <!-- Added title section -->
+        <div class="container5">
+            <div class="card5">
+                <img src="image35.jpeg" alt="Madurai to Chennai" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3> Chennai </h3>
+                    <p>Travel comfortably at affordable rates.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image36.jpeg" alt="Madurai to Coimbatore" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Coimbatore </h3>
+                    <p>Enjoy a smooth ride with professional drivers.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image37.jpg" alt="Madurai to Trichy" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Madurai</h3>
+                    <p>Reliable services for all your travel needs.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image38.jpg" alt="Madurai to Salem" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Trichy</h3>
+                    <p>Experience comfort and safety at its best.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image39.jpeg" alt="Madurai to Bangalore" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Salem</h3>
+                    <p>Your trusted partner for intercity travel.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="Bangalore.jpeg" alt="Madurai to Pondicherry" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Bangalore</h3>
+                    <p>Fast and efficient taxi services.</p>
+                </div>
+            </div>
+            <div class="card5">
+                <img src="image40.jpeg" alt="Madurai to Kanyakumari" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Pondicherry</h3>
+                    <p>Comfortable rides with flexible schedules.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image41.jpeg" alt="Madurai to Rameshwaram" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Cuddalore</h3>
+                    <p>Affordable and reliable taxi services.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image42.jpeg" alt="Madurai to Chennai" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3> Dharmapuri</h3>
+                    <p>Travel comfortably at affordable rates.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image43.jpeg" alt="Madurai to Pondicherry" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Dindigul</h3>
+                    <p>Fast and efficient taxi services.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image44.jpeg" alt="Madurai to Chennai" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Kanchipuram</h3>
+                    <p>Travel comfortably at affordable rates.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image45.jpeg" alt="Madurai to Kanchipuram" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Kanyakumari</h3>
+                    <p>Affordable, on-time services for your comfort.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image46.jpeg" alt="Madurai to Coimbatore" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Karur</h3>
+                    <p>Enjoy a smooth ride with professional drivers.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image47.jpeg" alt="Madurai to Vellore" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Krishnagiri</h3>
+                    <p>Reliable and affordable taxi services.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image48.jpeg" alt="Madurai to Erode" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Nagapattinam</h3>
+                    <p>Fast, reliable, and economical rides.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image49.jpeg" alt="Madurai to Karur" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Namakkal</h3>
+                    <p>Professional drivers for a safe journey.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image50.jpeg" alt="Madurai to Tirunelveli" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Perambalur</h3>
+                    <p>Comfortable rides at affordable rates.</p>
+                </div>
+            </div>
+    
+            <div class="card5">
+                <img src="image51.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                <div class="card-content5">
+                    <span>One Way Travels</span>
+                    <h3>Pudukkottai</h3>
+                    <p>Efficient and professional taxi services.</p>
+                </div>
+                </div>
+                <div class="card5">
+                    <img src="image52.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                    <div class="card-content5">
+                        <span>One Way Travels</span>
+                        <h3>Ramanathapuram</h3>
+                        <p>A comfortable and smooth ride.</p>
+                    </div>
+                    </div>
+                    <div class="card5">
+                        <img src="image53.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                        <div class="card-content5">
+                            <span>One Way Travels</span>
+                            <h3>Sivaganga
+                            </h3>
+                            <p> Affordable and punctual transport.</p>
+                        </div>
+                        </div>
+                        <div class="card5">
+                            <img src="image54.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                            <div class="card-content5">
+                                <span>One Way Travels</span>
+                                <h3>Thanjavur</h3>
+                                <p>A safe and secure journey.</p>
+                            </div>
+                            </div>
+                            <div class="card5">
+                                <img src="image55.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                <div class="card-content5">
+                                    <span>One Way Travels</span>
+                                    <h3>Theni</h3>
+                                    <p>A pleasant ride.</p>
+                                </div>
+                                </div>
+                                
+                                    <div class="card5">
+                                        <img src="ooty.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                        <div class="card-content5">
+                                            <span>One Way Travels</span>
+                                            <h3>Ooty</h3>
+                                            <p> A scenic ride.</p>
+                                        </div>
+                                        </div>
+                                        <div class="card5">
+                                            <img src="image57.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                            <div class="card-content5">
+                                                <span>One Way Travels</span>
+                                                <h3>Thiruvallur</h3>
+                                                <p> A relaxing ride </p>
+                                            </div>
+                                            </div>
+                                            <div class="card5">
+                                                <img src="thiruvarur.jpg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                <div class="card-content5">
+                                                    <span>One Way Travels</span>
+                                                    <h3>Thiruvarur
+                                                    </h3>
+                                                    <p>Comfortable travel to the city of pearls.</p>
+                                                </div>
+                                                </div>
+                                                <div class="card5">
+                                                    <img src="image59.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                    <div class="card-content5">
+                                                        <span>One Way Travels</span>
+                                                        <h3>Thoothukkudi</h3>
+                                                        <p>Travel comfortably.</p>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card5">
+                                                        <img src="image61.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                        <div class="card-content5">
+                                                            <span>One Way Travels</span>
+                                                            <h3> Tirunelveli</h3>
+                                                            <p>Fast, comfortable, and secure taxi rides for every traveler.</p>
+                                                        </div>
+                                                        </div>
+                                                        <div class="card5">
+                                                            <img src="image62.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                            <div class="card-content5">
+                                                                <span>One Way Travels</span>
+                                                                <h3>Tiruppur</h3>
+                                                                <p>From start to finish, we make your journey stress-free.</p>
+                                                            </div>
+                                                            </div>
+                                                            <div class="card5">
+                                                                <img src="image63.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                <div class="card-content5">
+                                                                    <span>One Way Travels</span>
+                                                                    <h3>Tiruvannamalai</h3>
+                                                                    <p>Travel in style, comfort, and safety with our taxi services.</p>
+                                                                </div>
+                                                                </div>
+                                                                <div class="card5">
+                                                                    <img src="image64.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                    <div class="card-content5">
+                                                                        <span>One Way Travels</span>
+                                                                        <h3>Vellore</h3>
+                                                                        <p>No delays, no hassles – just a smooth, professional ride.</p>
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="card5">
+                                                                        <img src="image65.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                        <div class="card-content5">
+                                                                            <span>One Way Travels</span>
+                                                                            <h3>Viluppuram</h3>
+                                                                            <p>Your comfort is our priority – travel with confidence.</p>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="card5">
+                                                                            <img src="image66.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                            <div class="card-content5">
+                                                                                <span>One Way Travels</span>
+                                                                                <h3>Virudhunagar</h3>
+                                                                                <p>From start to finish, we make your journey stress-free.</p>
+                                                                            </div>
+                                                                            </div>
+                                                                            <div class="card5">
+                                                                                <img src="image67.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                                <div class="card-content5">
+                                                                                    <span>One Way Travels</span>
+                                                                                    <h3>Tirupati
+                                                                                    </h3>
+                                                                                    <p>Efficient transportation to make your journey enjoyable.</p>
+                                                                                </div>
+                                                                                </div>
+                                                                               
+                                                                                    <div class="card5">
+                                                                                        <img src="image69.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                                        <div class="card-content5">
+                                                                                            <span>One Way Travels</span>
+                                                                                            <h3>Tenkasi</h3>
+                                                                                            <p>Trust us for the best in comfort, safety, and reliability.</p>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                        
+                                                                                            <div class="card5">
+                                                                                                <img src="image72.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                                                <div class="card-content5">
+                                                                                                    <span>One Way Travels</span>
+                                                                                                    <h3>Tirupathur</h3>
+                                                                                                    <p>Choose comfort, choose reliability – choose us.</p>
+                                                                                                </div>
+                                                                                                </div>
+                                                                                               
+                                                                                                        <div class="card5">
+                                                                                                            <img src="image65.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                                                            <div class="card-content5">
+                                                                                                                <span>One Way Travels</span>
+                                                                                                                <h3>Erode</h3>
+                                                                                                                <p>Travel with peace of mind knowing you’re in safe hands.</p>
+                                                                                                            </div>
+                                                                                                            </div>   
+                                                                                                            <div class="card5">
+                                                                                                                <img src="image66.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                                                                <div class="card-content5">
+                                                                                                                    <span>One Way Travels</span>
+                                                                                                                    <h3>Kallakurichi</h3>
+                                                                                                                    <p>Experience premium taxi services designed for your comfort.</p>
+                                                                                                                </div>
+                                                                                                                </div>   
+                                                                                                                <div class="card5">
+                                                                                                                    <img src="image67.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                                                                    <div class="card-content5">
+                                                                                                                        <span>One Way Travels</span>
+                                                                                                                        <h3>Ariyalur</h3>
+                                                                                                                        <p>Ride with us – where reliability and comfort meet.</p>
+                                                                                                                    </div>
+                                                                                                                    </div>   
+                                                                                                                    <div class="card5">
+                                                                                                                        <img src="image68.jpeg" alt="Madurai to Virudhunagar" class="card-image5">
+                                                                                                                        <div class="card-content5">
+                                                                                                                            <span>One Way Travels</span>
+                                                                                                                            <h3>Chengalpattu</h3>
+                                                                                                                            <p>Travel effortlessly, arrive on time – every single ride.</p>
+                                                                                                                        </div>
+                                                                                                                        </div> 
+        </div>
+        </div>
+        <script>
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+    
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }
+            });
+        });
+
+        document.querySelector('.button2').addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector('.service-section'); // Or `.our-taxi-section`
+    if (target) {
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+});
+
+        </script>
+    </body>
+    
+    <a href="#testimonial"></a>
+      <body class="body9">
+        <div id="testimonial">
+        <section class="testimonials-section9">
+          <h2>What Our <span>Clients Say</span></h2>
+          <div class="testimonials-container9">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card9">
+              <div class="testimonial-header9">
+                <div class="testimonial-avatar9">
+                  <i class="fas fa-male"></i>
+                </div>
+                <div class="testimonial-info9">
+                  <h3>Barani</h3>
+                  <span>Customer</span>
+                </div>
+              </div>
+              <p class="testimonial-content9">
+                I had a pleasant experience with this service. The booking process was simple, and the fare was reasonable. The driver was well aware of the best routes.
+              </p>
+              <div class="testimonial-rating9">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+              </div>
+            </div>
+      
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card9">
+              <div class="testimonial-header9">
+                <div class="testimonial-avatar9">
+                  <i class="fas fa-female"></i>
+                </div>
+                <div class="testimonial-info9">
+                  <h3>Sangeetha</h3>
+                  <span>Customer</span>
+                </div>
+              </div>
+              <p class="testimonial-content9">
+                The service was excellent! The driver was polite and helped with my luggage. I felt safe and relaxed throughout the ride.
+              </p>
+              <div class="testimonial-rating9">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+              </div>
+            </div>
+            <div class="testimonial-card9">
+              <div class="testimonial-header9">
+                <div class="testimonial-avatar9">
+                  <i class="fas fa-male"></i>
+                </div>
+                <div class="testimonial-info9">
+                  <h3>Barani</h3>
+                  <span>Customer</span>
+                </div>
+              </div>
+              <p class="testimonial-content9">
+                I had a pleasant experience with this service. The booking process was simple, and the fare was reasonable. The driver was well aware of the best routes.
+              </p>
+              <div class="testimonial-rating9">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+              </div>
+            </div>
+      
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card9">
+              <div class="testimonial-header9">
+                <div class="testimonial-avatar9">
+                  <i class="fas fa-female"></i>
+                </div>
+                <div class="testimonial-info9">
+                  <h3>Sangeetha</h3>
+                  <span>Customer</span>
+                </div>
+              </div>
+              <p class="testimonial-content9">
+                The service was excellent! The driver was polite and helped with my luggage. I felt safe and relaxed throughout the ride.
+              </p>
+              <div class="testimonial-rating9">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+                <img src="https://img.icons8.com/ios-filled/50/81d4fa/star--v1.png" alt="Star">
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        
+
+        <div class="floating-buttons3">
+            <a href="tel:+919876543210">📞</a>
+            <a href="https://wa.me/919876543210" target="_blank">💬</a>
+        </div>
+    
+        <div class="scroll-top3" onclick="scrollToTop()">⬆</div>
+        </div>
+    
+        
+        <script>
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+          let currentIndex = 0;
+          const testimonials = document.querySelectorAll('.testimonial-card9');
+          const totalTestimonials = testimonials.length;
+      
+          setInterval(() => {
+            // Remove zoom effect from all testimonials
+            testimonials.forEach(card => card.classList.remove('zoom'));
+      
+            // Add zoom effect to the current testimonial
+            testimonials[currentIndex].classList.add('zoom');
+      
+            // Move to the next testimonial
+            currentIndex = (currentIndex + 1) % totalTestimonials;
+          }, 2000); // Change zoom effect every 2 seconds
+
+          function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+    
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }
+            });
+        });
+        </script>
+      </body>
+      <a href="#contact us"></a>
+      <body class="body10">
+        <div id="contact us">
+        <!-- Section One -->
+        <div class="section10">
+            <div class="contact-title10">Contact Us</div>
+            <div class="contact-container10">
+                <div class="contact-card10">
+                    <div class="icon10">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Office Address</h3>
+                    <p>3/37A, JJ Nagar, MGR Street,<br>
+                       Sennarkuppam, Poonamallee,<br>
+                       Chennai, Tamil Nadu, 600056</p>
+                </div>
+                <div class="contact-card10">
+                    <div class="icon10">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>(+91) 75500 75770</p>
+                </div>
+                <div class="contact-card10">
+                    <div class="icon10">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>hello@droptaxichennai.com</p>
+                </div>
+                <div class="contact-card10">
+                    <div class="icon10">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Open Time</h3>
+                    <p>Call Anytime - 24/7</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Section Two -->
+        <div class="section10">
+            <div class="contact-section10">
+                <div class="contact-left10">
+                    <img src="get2.jpg" alt="Support Image">
+                </div>
+                <div class="contact-right10">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions or need assistance? Contact our dedicated customer support team. Reach out to us through phone, email, or our online contact form for prompt and helpful service.</p>
+                    <form>
+                        <div class="form-group10">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Your Mobile Number" required>
+                        </div>
+                        <div class="form-group10">
+                            <input type="text" placeholder="Your Subject" required>
+                        </div>
+                        <div class="form-group10">
+                            <textarea placeholder="Write Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn10">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="floating-buttons3">
+        <a href="tel:+919876543210">📞</a>
+        <a href="https://wa.me/919876543210" target="_blank">💬</a>
+    </div>
+
+    <div class="scroll-top3" onclick="scrollToTop()">⬆</div>
+    </div>
+
+    
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            }
+        });
+    });
+    </script>
+        
+ 
+
+    
+    </body> 
+    
+</html>
